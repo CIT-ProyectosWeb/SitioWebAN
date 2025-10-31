@@ -150,3 +150,466 @@ body {
 }
 
 /***************************************************************************************/
+
+/* ============================== */
+/* SECCIÓN DE CAPACITACIONES */
+/* ============================== */
+.capacitaciones-section {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 5%;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.linea {
+  width: 80px;
+  height: 4px;
+  background-color: #ce5b0c;
+  margin: 15px auto 50px;
+  border-radius: 10px;
+}
+
+/* Carruseles */
+.carrusel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.carrusel-contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tarjetas */
+.tarjeta {
+  flex: 0 0 calc(25% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tarjeta h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1b1b1b;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ce5b0c;
+}
+
+/* Flechas */
+.flecha {
+  background: #888;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.flecha:hover {
+  background: #ce5b0c;
+}
+
+.flecha.izquierda {
+  position: absolute;
+  left: -50px;
+}
+
+.flecha.derecha {
+  position: absolute;
+  right: -50px;
+}
+
+/* ============================== */
+/* SECCIÓN DE COACHING */
+/* ============================== */
+.coaching-section {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 100px 5%;
+}
+
+.coaching-section .titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1b1b1b;
+  margin-top: -90px; /* acerca el título a la sección anterior */
+}
+
+.coaching-section .linea {
+  width: 80px;
+  height: 4px;
+  background-color: #ce5b0c;
+  margin: 15px auto 50px;
+  border-radius: 10px;
+}
+
+.coaching-section .carrusel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coaching-section .tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ce5b0c;
+}
+
+/* ============================== */
+/* SECCIÓN DE ESTADÍSTICAS */
+/* ============================== */
+.estadisticas-section {
+  background-color: #ce5b0c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 5%;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.estadistica {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.estadistica h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+.estadistica p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.separador {
+  width: 2px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 📱 Responsivo estadísticas */
+@media (max-width: 900px) {
+  .estadisticas-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 10%;
+  }
+
+  .separador {
+    display: none;
+  }
+
+  .estadistica h2 {
+    font-size: 2.4rem;
+  }
+
+  .estadistica p {
+    font-size: 1rem;
+  }
+}
+
+/* ============================== */
+/* CONFERENCIAS */
+/* ============================== */
+.conferencias-categorias {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.conferencias-titulo-seccion {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.conferencias-subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.conferencias-linea {
+  width: 80px;
+  height: 4px;
+  background-color: #ce5b0c;
+  margin: 15px auto 50px;
+  border-radius: 10px;
+}
+
+.conferencias-categoria {
+  margin-bottom: 70px;
+}
+
+.conferencias-titulo-categoria {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ce5b0c;
+  margin-bottom: 25px;
+}
+
+.conferencias-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.conferencias-tarjeta {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conferencias-tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+
+/* Overlay general */
+.conferencias-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 91, 12, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 0 15px;
+  border-radius: 15px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.conferencias-tarjeta:hover .conferencias-overlay {
+  opacity: 1;
+}
+
+.conferencias-overlay h3,
+.conferencias-overlay p {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.conferencias-tarjeta:hover .conferencias-overlay h3,
+.conferencias-tarjeta:hover .conferencias-overlay p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Tipografía del overlay */
+.conferencias-overlay h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.conferencias-overlay p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.4;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Hover en la imagen */
+.conferencias-tarjeta:hover img {
+  transform: scale(1.05);
+  filter: brightness(65%);
+}
+
+/* 🎨 Colores por categoría */
+.overlay-naranja {
+  background-color: rgba(206, 91, 12, 0.75);
+}
+
+.overlay-gris {
+  background-color: rgba(80, 80, 80, 0.75);
+}
+
+/* 📱 Responsivo conferencias */
+@media (max-width: 768px) {
+  .conferencias-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .conferencias-overlay p {
+    font-size: 0.85rem;
+  }
+}
+
+/***************************************************************************************/
+
+/* Footer */
+.footer {
+    background-color: #8c8c8c;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    gap: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    flex: 1 1 220px;
+    max-width: 260px;
+    min-width: 220px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-section img.footer-imagen {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer-section p {
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section .fa-brands {
+    font-size: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    color: #fff;
+}
+
+.footer-section .fa-brands:hover {
+    transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 10px 20px;
+        margin-bottom: -140px;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .footer-section h3 {
+        margin-top: -75px;
+        margin-bottom: 6px;
+    }
+
+    .footer-section p {
+        margin-bottom: 4px;
+        line-height: 1.3;
+    }
+
+    .footer-section img.footer-imagen {
+        width: 50%;
+        max-width: 170px;
+        margin: 0 auto 8px auto;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .footer-section .fa-brands {
+        margin: 0 8px;
+        font-size: 26px;
+    }
+}
