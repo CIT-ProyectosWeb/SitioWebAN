@@ -155,11 +155,10 @@ body {
 /* SECCIÓN DE CAPACITACIONES */
 /* ============================== */
 .capacitaciones-section {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   text-align: center;
   padding: 80px 5%;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  margin-top: 60px; /* aumenta o reduce este valor */
 }
 
 .titulo-seccion {
@@ -259,9 +258,10 @@ body {
 /* SECCIÓN DE COACHING */
 /* ============================== */
 .coaching-section {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   text-align: center;
   padding: 100px 5%;
+  margin-top: 0px; /* aumenta o reduce este valor */
 }
 
 .coaching-section .titulo-seccion {
@@ -287,6 +287,44 @@ body {
 }
 
 .coaching-section .tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ce5b0c;
+}
+
+
+/* ============================== */
+/* SECCIÓN DE CONSULTORIA INTEGRAL PARA EMPRESAS */
+/* ============================== */
+.consultoria-section {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 100px 5%;
+  margin-top: -30px; /* aumenta o reduce este valor */
+}
+
+.consultoria-section .titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1b1b1b;
+  margin-top: -90px; /* acerca el título a la sección anterior */
+}
+
+.consultoria-section .linea {
+  width: 80px;
+  height: 4px;
+  background-color: #ce5b0c;
+  margin: 15px auto 50px;
+  border-radius: 10px;
+}
+
+.consultoria-section .carrusel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultoria-section .tarjeta:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ce5b0c;
 }
@@ -358,7 +396,7 @@ body {
 /* CONFERENCIAS */
 /* ============================== */
 .conferencias-categorias {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   text-align: center;
   padding: 80px 5%;
 }
@@ -372,6 +410,7 @@ body {
 .conferencias-subtitulo {
   font-size: 1.2rem;
   color: #666;
+  margin-top: -30px;  /* reduce el espacio superior */
   margin-bottom: 10px;
 }
 

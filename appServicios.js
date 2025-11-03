@@ -21,29 +21,39 @@ function moverIzquierdaCoaching() {
   if (carrusel) carrusel.scrollBy({ left: -350, behavior: 'smooth' });
 }
 
+function moverDerechaConsultoria() {
+  const carrusel = document.getElementById("carruselConsultoria");
+  if (carrusel) carrusel.scrollBy({ left: 350, behavior: 'smooth' });
+}
+
+function moverIzquierdaConsultoria() {
+  const carrusel = document.getElementById("carruselConsultoria");
+  if (carrusel) carrusel.scrollBy({ left: -350, behavior: 'smooth' });
+}
+
 // ============================================================
 // DATOS DE LAS CAPACITACIONES
 // ============================================================
 const capacitaciones1 = [
-  { titulo: 'Team Building', imagen: 'https://picsum.photos/400/250?random=7', descripcion: 'Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.' },
-  { titulo: 'Fortalecimiento del compromiso hacia la empresa', imagen: 'https://picsum.photos/400/250?random=1', descripcion: 'Estrategias para generar equipos más motivados, involucrados y orientados a resultados.' },
-  { titulo: 'Planeación y gestión de la productividad', imagen: 'https://picsum.photos/400/250?random=2', descripcion: 'Aprende a planificar tareas y metas con enfoque SMART y resultados medibles.' },
-  { titulo: 'Gestión del cambio', imagen: 'https://picsum.photos/400/250?random=3', descripcion: 'Aumenta la adaptabilidad y resiliencia organizacional ante nuevos desafíos.' },
-  { titulo: 'Fortalecimiento de habilidades de liderazgo', imagen: 'https://picsum.photos/400/250?random=4', descripcion: 'Desarrolla competencias para dirigir, inspirar y guiar con empatía.' },
-  { titulo: 'Fortalecimiento de habilidades para el manejo de personal', imagen: 'https://picsum.photos/400/250?random=5', descripcion: 'Mejora la comunicación, delegación y desarrollo de tus colaboradores.' },
-  { titulo: 'Herramientas de coaching para un liderazgo eficiente', imagen: 'https://picsum.photos/400/250?random=6', descripcion: 'Aplica técnicas de coaching y PNL para potenciar a tu equipo.' },
-  { titulo: 'Comunicación productiva entre departamentos', imagen: 'https://picsum.photos/400/250?random=8', descripcion: 'Mejora la interacción interna y la sinergia organizacional.' },
-  { titulo: 'Comunicación asertiva y efectiva', imagen: 'https://picsum.photos/400/250?random=9', descripcion: 'Aprende a escuchar, expresarte y negociar con empatía.' },
+  { titulo: 'Team Building', imagen: 'imagenes/c1.jpg', descripcion: 'Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.' },
+  { titulo: 'Fortalecimiento del compromiso hacia la empresa', imagen: 'imagenes/c2.jpg', descripcion: 'Estrategias para generar equipos más motivados, involucrados y orientados a resultados.' },
+  { titulo: 'Planeación y gestión de la productividad', imagen: 'imagenes/c3.jpg', descripcion: 'Aprende a planificar tareas y metas con enfoque SMART y resultados medibles.' },
+  { titulo: 'Gestión del cambio', imagen: 'imagenes/c4.jpg', descripcion: 'Aumenta la adaptabilidad y resiliencia organizacional ante nuevos desafíos.' },
+  { titulo: 'Fortalecimiento de habilidades de liderazgo', imagen: 'imagenes/c5.jpg', descripcion: 'Desarrolla competencias para dirigir, inspirar y guiar con empatía.' },
+  { titulo: 'Fortalecimiento de habilidades para el manejo de personal', imagen: 'imagenes/c6.jpg', descripcion: 'Mejora la comunicación, delegación y desarrollo de tus colaboradores.' },
+  { titulo: 'Herramientas de coaching para un liderazgo eficiente', imagen: 'imagenes/c7.jpg', descripcion: 'Aplica técnicas de coaching y PNL para potenciar a tu equipo.' },
+  { titulo: 'Comunicación productiva entre departamentos', imagen: 'imagenes/c8.jpg', descripcion: 'Mejora la interacción interna y la sinergia organizacional.' },
+  { titulo: 'Comunicación asertiva y efectiva', imagen: 'imagenes/c9.jpg', descripcion: 'Aprende a escuchar, expresarte y negociar con empatía.' },
 ];
 
 const capacitaciones2 = [
-  { titulo: 'Relaciones humanas y empatía', imagen: 'https://picsum.photos/400/250?random=1', descripcion: 'Fomenta el respeto, la comprensión y el trabajo colaborativo.' },
-  { titulo: 'Ventas exitosas', imagen: 'https://picsum.photos/400/250?random=2', descripcion: 'Estrategias prácticas para entender al cliente y cerrar acuerdos con éxito.' },
-  { titulo: 'Servicio y atención de excelencia', imagen: 'https://picsum.photos/400/250?random=3', descripcion: 'Transforma la atención tradicional en experiencias memorables para el cliente.' },
-  { titulo: 'Motivación y actitudes positivas en mi trabajo', imagen: 'https://picsum.photos/400/250?random=4', descripcion: 'Promueve la satisfacción laboral, compromiso y energía positiva.' },
-  { titulo: 'Control y manejo del estrés', imagen: 'https://picsum.photos/400/250?random=5', descripcion: 'Aprende técnicas efectivas de relajación y equilibrio.' },
-  { titulo: 'Inteligencia emocional aplicada al trabajo', imagen: 'https://picsum.photos/400/250?random=6', descripcion: 'Comprende y regula tus emociones para mejorar tu desempeño y relaciones laborales.' },
-  { titulo: 'Manejo de conflictos', imagen: 'https://picsum.photos/400/250?random=7', descripcion: 'Aprende estrategias para resolver problemas de forma constructiva.' },
+  { titulo: 'Relaciones humanas y empatía', imagen: 'imagenes/C10.jpg', descripcion: 'Fomenta el respeto, la comprensión y el trabajo colaborativo.' },
+  { titulo: 'Ventas exitosas', imagen: 'imagenes/C11.jpg', descripcion: 'Estrategias prácticas para entender al cliente y cerrar acuerdos con éxito.' },
+  { titulo: 'Servicio y atención de excelencia', imagen: 'imagenes/C12.jpg', descripcion: 'Transforma la atención tradicional en experiencias memorables para el cliente.' },
+  { titulo: 'Motivación y actitudes positivas en mi trabajo', imagen: 'imagenes/C13.jpg', descripcion: 'Promueve la satisfacción laboral, compromiso y energía positiva.' },
+  { titulo: 'Control y manejo del estrés', imagen: 'imagenes/C14.jpg', descripcion: 'Aprende técnicas efectivas de relajación y equilibrio.' },
+  { titulo: 'Inteligencia emocional aplicada al trabajo', imagen: 'imagenes/C15.jpg', descripcion: 'Comprende y regula tus emociones para mejorar tu desempeño y relaciones laborales.' },
+  { titulo: 'Manejo de conflictos', imagen: 'imagenes/C16.jpg', descripcion: 'Aprende estrategias para resolver problemas de forma constructiva.' },
 ];
 
 // ============================================================
@@ -60,6 +70,16 @@ const coaching = [
   { titulo: 'Empoderamiento Personal', imagen: 'https://picsum.photos/400/250?random=38', descripcion: 'Reconoce tus fortalezas y asume el control de tu desarrollo personal.' },
   { titulo: 'Coaching para la Resiliencia', imagen: 'https://picsum.photos/400/250?random=39', descripcion: 'Recupera tu equilibrio ante el cambio y las adversidades.' },
   { titulo: 'Mentoring & Coaching', imagen: 'https://picsum.photos/400/250?random=40', descripcion: 'Combina la guía estratégica del mentoring con el enfoque reflexivo del coaching.' },
+];
+
+// ============================================================
+// DATOS DE CONSULTORIA INTEGRAL PARA EMPRESAS
+// ============================================================
+const consultoria = [
+  { titulo: 'Coaching de Vida', imagen: 'https://picsum.photos/400/250?random=31', descripcion: 'Descubre tu propósito y alinea tus acciones con lo que realmente te inspira.' },
+  { titulo: 'Coaching Ejecutivo', imagen: 'https://picsum.photos/400/250?random=32', descripcion: 'Desarrolla tu liderazgo y maximiza el potencial de tu equipo y organización.' },
+  { titulo: 'Coaching de Equipos', imagen: 'https://picsum.photos/400/250?random=33', descripcion: 'Fortalece la confianza, comunicación y colaboración entre tus colaboradores.' },
+  { titulo: 'Coaching Personal', imagen: 'https://picsum.photos/400/250?random=34', descripcion: 'Aprende a gestionar tus emociones y superar bloqueos personales.' },
 ];
 
 // ============================================================
@@ -168,5 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTarjetas('carrusel1', capacitaciones1);
   renderTarjetas('carrusel2', capacitaciones2);
   renderTarjetas('carruselCoaching', coaching);
+  renderTarjetas('carruselConsultoria', consultoria);
   renderConferencias();
 });
