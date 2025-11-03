@@ -175,6 +175,8 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05); /* Sutil sombra */
+  border-radius: 10px 0 0 10px; /* Suaviza los bordes del formulario */
 }
 
 .contact-form h2 {
@@ -210,6 +212,11 @@ textarea {
   transition: border-color 0.3s ease;
 }
 
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -225,10 +232,12 @@ button {
   font-weight: 100;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-left: 360px;
 }
 
 button:hover {
-  background-color: #1b263b;
+  background-color: #133b5c;
 }
 
 .contact-image {
@@ -244,7 +253,6 @@ button:hover {
 }
 
 /***************************************************************************************/
-
 
 /* Mapa debajo */
 .map-container {
