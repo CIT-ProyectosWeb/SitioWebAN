@@ -37,28 +37,34 @@
         <div class="contact-container">
             <!-- Izquierda: texto y formulario -->
             <div class="contact-form">
-                <h2>Contáctanos ahora</h2>
-                <p>Av. Fray A. Alcalde 10, 44100 Guadalajara, Jal., México</p>
-                <p>info@mistitio.com</p>
-                <p>+52-1-33-123-4567</p>
+                <h2>Contáctame ahora</h2>
+                <p>Blvd. Felipe Pescador 1830, Nueva Vizcaya, 34080 Durango, Dgo.</p>
+                <p>alnegresal@gmail.com</p>
 
-                <div class="input-group">
-                    <input type="text" placeholder="Nombre" />
-                    <input type="email" placeholder="Email" />
-                </div>
+                <form id="contactForm" novalidate>
+                    <div class="input-group">
+                        <input id="name" name="name" type="text" placeholder="Nombre" />
+                        <input id="email" name="email" type="email" placeholder="Email" />
+                    </div>
 
-                <input type="text" placeholder="Asunto" />
-                <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <input id="subject" name="subject" type="text" placeholder="Asunto" />
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="6"></textarea>
 
-                <button>Enviar</button>
+                    <div id="formFeedback" aria-live="polite" style="margin-bottom:8px;color:#b00020;"></div>
+
+                    <button id="submitBtn" type="submit">Enviar</button>
+                </form>
             </div>
 
             <!-- Derecha: imagen -->
             <div class="contact-image">
-                <img src="imagenes/Conferencia.jpg" alt="Personas saliendo de edificio" />
+                <img src="imagenes/img5.jpg" alt="Personas saliendo de edificio" />
             </div>
         </div>
     </section>
+
+    <!-- Formulario JS-->
+    <app src="appContacto.js"></app>
 
 
     <!-- Mapa -->
