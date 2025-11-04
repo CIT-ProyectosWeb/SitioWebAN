@@ -86,16 +86,48 @@
 
       <!-- ✅ CONSULTORIA INTEGRAL PARA EMPRESAS -->
   <section class="consultoria-section">
-    <h1 class="titulo-seccion">CONSULTORIA INTEGRAL PARA EMPRESAS</h1>
-    <p class="conferencias-subtitulo">Asesoría estratégica y acompañamiento para optimizar la gestión y el crecimiento de tu empresa</p>
-    <div class="linea"></div>
+  <h1 class="titulo-seccion">CONSULTORÍA INTEGRAL PARA EMPRESAS</h1>
+  <p class="conferencias-subtitulo">Estrategias clave para optimizar tu organización y potenciar sus resultados</p>
+  <div class="linea"></div>
 
-    <div class="carrusel">
-      <button class="flecha izquierda" onclick="moverIzquierdaConsultoria()">&#10094;</button>
-      <div class="carrusel-contenedor" id="carruselConsultoria"></div>
-      <button class="flecha derecha" onclick="moverDerechaConsultoria()">&#10095;</button>
+  <div class="consultoria-container">
+    <!-- Bloques de texto -->
+    <div class="consultoria-info izquierda-superior">
+      <h2>Capital Humano</h2>
+      <p>Fortalecemos el desarrollo del talento, liderazgo y compromiso de tu equipo.</p>
     </div>
-  </section>
+    <div class="consultoria-info derecha-superior">
+      <h2>Clientes y Marketing</h2>
+      <p>Diseñamos estrategias de comunicación y posicionamiento para tu marca.</p>
+    </div>
+    <div class="consultoria-info izquierda-inferior">
+      <h2>Finanzas</h2>
+      <p>Optimizamos los recursos económicos de tu empresa con planeación estratégica.</p>
+    </div>
+    <div class="consultoria-info derecha-inferior">
+      <h2>Procesos</h2>
+      <p>Mejoramos la eficiencia operativa mediante innovación y mejora continua.</p>
+    </div>
+
+    <!-- Círculo central -->
+    <div class="consultoria-cuadrante">
+      <div class="cuadro cuadro1"></div>
+      <div class="cuadro cuadro2"></div>
+      <div class="cuadro cuadro3"></div>
+      <div class="cuadro cuadro4"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🌟 MODAL -->
+<div id="modalConsultoria" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2 id="modalTitulo"></h2>
+    <p id="modalTexto"></p>
+  </div>
+</div>
 
   <!-- Footer -->
     <footer class="footer">

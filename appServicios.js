@@ -60,26 +60,16 @@ const capacitaciones2 = [
 // DATOS DE COACHING
 // ============================================================
 const coaching = [
-  { titulo: 'Coaching de Vida', imagen: 'https://picsum.photos/400/250?random=31', descripcion: 'Descubre tu propósito y alinea tus acciones con lo que realmente te inspira.' },
-  { titulo: 'Coaching Ejecutivo', imagen: 'https://picsum.photos/400/250?random=32', descripcion: 'Desarrolla tu liderazgo y maximiza el potencial de tu equipo y organización.' },
-  { titulo: 'Coaching de Equipos', imagen: 'https://picsum.photos/400/250?random=33', descripcion: 'Fortalece la confianza, comunicación y colaboración entre tus colaboradores.' },
-  { titulo: 'Coaching Personal', imagen: 'https://picsum.photos/400/250?random=34', descripcion: 'Aprende a gestionar tus emociones y superar bloqueos personales.' },
-  { titulo: 'Coaching Transformacional', imagen: 'https://picsum.photos/400/250?random=35', descripcion: 'Cambia tu mentalidad para alcanzar metas que antes parecían imposibles.' },
-  { titulo: 'Liderazgo Consciente', imagen: 'https://picsum.photos/400/250?random=36', descripcion: 'Dirige con empatía, integridad y visión estratégica.' },
-  { titulo: 'Coaching de Comunicación', imagen: 'https://picsum.photos/400/250?random=37', descripcion: 'Aprende a escuchar activamente y comunicarte con impacto.' },
-  { titulo: 'Empoderamiento Personal', imagen: 'https://picsum.photos/400/250?random=38', descripcion: 'Reconoce tus fortalezas y asume el control de tu desarrollo personal.' },
-  { titulo: 'Coaching para la Resiliencia', imagen: 'https://picsum.photos/400/250?random=39', descripcion: 'Recupera tu equilibrio ante el cambio y las adversidades.' },
-  { titulo: 'Mentoring & Coaching', imagen: 'https://picsum.photos/400/250?random=40', descripcion: 'Combina la guía estratégica del mentoring con el enfoque reflexivo del coaching.' },
-];
-
-// ============================================================
-// DATOS DE CONSULTORIA INTEGRAL PARA EMPRESAS
-// ============================================================
-const consultoria = [
-  { titulo: 'Coaching de Vida', imagen: 'https://picsum.photos/400/250?random=31', descripcion: 'Descubre tu propósito y alinea tus acciones con lo que realmente te inspira.' },
-  { titulo: 'Coaching Ejecutivo', imagen: 'https://picsum.photos/400/250?random=32', descripcion: 'Desarrolla tu liderazgo y maximiza el potencial de tu equipo y organización.' },
-  { titulo: 'Coaching de Equipos', imagen: 'https://picsum.photos/400/250?random=33', descripcion: 'Fortalece la confianza, comunicación y colaboración entre tus colaboradores.' },
-  { titulo: 'Coaching Personal', imagen: 'https://picsum.photos/400/250?random=34', descripcion: 'Aprende a gestionar tus emociones y superar bloqueos personales.' },
+  { titulo: 'Coaching de Vida', imagen: 'imagenes/coaching1.jpg', descripcion: 'Descubre tu propósito y alinea tus acciones con lo que realmente te inspira.' },
+  { titulo: 'Coaching Ejecutivo', imagen: 'imagenes/coaching2.jpg', descripcion: 'Desarrolla tu liderazgo y maximiza el potencial de tu equipo y organización.' },
+  { titulo: 'Coaching de Equipos', imagen: 'imagenes/coaching3.jpg', descripcion: 'Fortalece la confianza, comunicación y colaboración entre tus colaboradores.' },
+  { titulo: 'Coaching Personal', imagen: 'imagenes/coaching4.jpg', descripcion: 'Aprende a gestionar tus emociones y superar bloqueos personales.' },
+  { titulo: 'Coaching Transformacional', imagen: 'imagenes/coaching5.jpg', descripcion: 'Cambia tu mentalidad para alcanzar metas que antes parecían imposibles.' },
+  { titulo: 'Liderazgo Consciente', imagen: 'imagenes/coaching6.jpg', descripcion: 'Dirige con empatía, integridad y visión estratégica.' },
+  { titulo: 'Coaching de Comunicación', imagen: 'imagenes/coaching7.jpg', descripcion: 'Aprende a escuchar activamente y comunicarte con impacto.' },
+  { titulo: 'Empoderamiento Personal', imagen: 'imagenes/coaching8.jpg', descripcion: 'Reconoce tus fortalezas y asume el control de tu desarrollo personal.' },
+  { titulo: 'Coaching para la Resiliencia', imagen: 'imagenes/coaching9.jpg', descripcion: 'Recupera tu equilibrio ante el cambio y las adversidades.' },
+  { titulo: 'Mentoring & Coaching', imagen: 'imagenes/coaching10.jpg', descripcion: 'Combina la guía estratégica del mentoring con el enfoque reflexivo del coaching.' },
 ];
 
 // ============================================================
@@ -188,6 +178,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTarjetas('carrusel1', capacitaciones1);
   renderTarjetas('carrusel2', capacitaciones2);
   renderTarjetas('carruselCoaching', coaching);
-  renderTarjetas('carruselConsultoria', consultoria);
   renderConferencias();
 });
