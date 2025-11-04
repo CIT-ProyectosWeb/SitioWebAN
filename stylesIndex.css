@@ -665,7 +665,7 @@ body {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .linea-tiempo-container {
     padding: 50px 15px;
   }
@@ -680,7 +680,7 @@ body {
   }
 
   .evento {
-    width: 100%;
+    width: 90%;
     padding: 10px 20px 10px 55px;
     margin-bottom: 25px;
   }
@@ -692,7 +692,7 @@ body {
 
   .evento::before {
     left: 0;
-    margin-left: -8px;
+    margin-left: 17px;
   }
 
   .evento .content {
@@ -771,8 +771,8 @@ body {
   .evento::before {
     width: 20px;
     height: 20px;
-    margin-left: 0px;
-    left: 15px;
+    margin-left: 5px;
+    left: -10px;
     width: 14px;
     height: 14px;
     top: 20px;
@@ -955,8 +955,6 @@ body {
     text-align: center;
     gap: 10px;
     padding: 20px;
-    padding: 10px 20px;
-    margin-bottom: -140px;
   }
 
   .footer-section {
