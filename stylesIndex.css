@@ -598,8 +598,8 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #8c8c8c;
-    color: #fff;
+    background-color: #e2e2e2;
+    color: #000;
     padding: 5px 0;
     text-align: center;
 }
@@ -646,7 +646,7 @@ body {
 }
 
 .footer-link {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -654,7 +654,7 @@ body {
     font-size: 28px;
     margin: 0 10px;
     transition: transform 0.3s ease;
-    color: #fff;
+    color: black;
 }
 
 .footer-section .fa-brands:hover {
