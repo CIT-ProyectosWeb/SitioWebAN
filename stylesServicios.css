@@ -293,41 +293,117 @@ body {
 
 
 /* ============================== */
-/* SECCIÓN DE CONSULTORIA INTEGRAL PARA EMPRESAS */
+/* CONSULTORÍA INTEGRAL */
 /* ============================== */
 .consultoria-section {
   background-color: #ffffff;
   text-align: center;
-  padding: 100px 5%;
-  margin-top: -30px; /* aumenta o reduce este valor */
+  padding: 80px 5%;
+  margin-top: -130px; /* aumenta o reduce este valor */
 }
 
 .consultoria-section .titulo-seccion {
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #1b1b1b;
-  margin-top: -90px; /* acerca el título a la sección anterior */
 }
 
 .consultoria-section .linea {
   width: 80px;
   height: 4px;
   background-color: #ce5b0c;
-  margin: 15px auto 50px;
+  margin: 15px auto 60px;
   border-radius: 10px;
 }
 
-.consultoria-section .carrusel {
-  position: relative;
+/* Contenedor general */
+.consultoria-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 20px;
 }
 
-.consultoria-section .tarjeta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ce5b0c;
+/* Círculo */
+.consultoria-cuadrante {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
+
+/* Cuadrantes con imágenes */
+.cuadro {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+}
+
+.cuadro:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.cuadro1 { background-image: url("imagenes/c1.jpg"); }
+.cuadro2 { background-image: url("imagenes/c2.jpg"); }
+.cuadro3 { background-image: url("imagenes/c3.jpg"); }
+.cuadro4 { background-image: url("imagenes/c4.jpg"); }
+
+/* Bloques de texto */
+.consultoria-info {
+  position: absolute;
+  width: 220px;
+  text-align: left;
+}
+
+.consultoria-info h2 {
+  color: #ce5b0c;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.consultoria-info p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Posiciones alrededor del círculo */
+.izquierda-superior { top: 5%; left: 20%; text-align: right; }
+.derecha-superior { top: 5%; right: 20%; }
+.izquierda-inferior { bottom: 5%; left: 20%; text-align: right; }
+.derecha-inferior { bottom: 5%; right: 20%; }
+
+/* Responsividad */
+@media (max-width: 950px) {
+  .consultoria-container {
+    flex-direction: column;
+  }
+
+  .consultoria-info {
+    position: static;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .consultoria-cuadrante {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+
 
 /* ============================== */
 /* SECCIÓN DE ESTADÍSTICAS */
@@ -524,11 +600,11 @@ body {
 
 /* 🎨 Colores por categoría */
 .overlay-naranja {
-  background-color: rgba(206, 91, 12, 0.75);
+  background-color: rgba(206, 90, 12, 0.562);
 }
 
 .overlay-gris {
-  background-color: rgba(80, 80, 80, 0.75);
+  background-color: rgba(80, 80, 80, 0.466);
 }
 
 /* 📱 Responsivo conferencias */
