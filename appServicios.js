@@ -35,7 +35,7 @@ function moverIzquierdaConsultoria() {
 // DATOS DE LAS CAPACITACIONES
 // ============================================================
 const capacitaciones1 = [
-  { titulo: 'Team Building', imagen: 'imagenes/c1.jpg', descripcion: 'Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.' },
+  { titulo: 'Team Building', imagen: 'imagenes/TB.png', descripcion: 'Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.' },
   { titulo: 'Fortalecimiento del compromiso hacia la empresa', imagen: 'imagenes/c2.jpg', descripcion: 'Estrategias para generar equipos más motivados, involucrados y orientados a resultados.' },
   { titulo: 'Planeación y gestión de la productividad', imagen: 'imagenes/c3.jpg', descripcion: 'Aprende a planificar tareas y metas con enfoque SMART y resultados medibles.' },
   { titulo: 'Gestión del cambio', imagen: 'imagenes/c4.jpg', descripcion: 'Aumenta la adaptabilidad y resiliencia organizacional ante nuevos desafíos.' },
