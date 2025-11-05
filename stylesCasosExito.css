@@ -316,6 +316,17 @@ body {
     }
 }
 
+/* Celulares pequeños (<= 480px) → 1 columna */
+@media (max-width: 300px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 12px 5px;
+        gap: 10px;
+        margin-bottom: 90px;
+    }
+}
+
 /***************************************************************************************/
 
 /* Footer */
