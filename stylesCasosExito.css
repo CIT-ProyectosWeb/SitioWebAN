@@ -272,7 +272,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Tablets grandes 10" - 11" (<= 1024px) */
 @media (max-width: 1150px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
