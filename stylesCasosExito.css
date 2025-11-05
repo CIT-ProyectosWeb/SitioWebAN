@@ -273,11 +273,11 @@ body {
 }
 
 /* Tablets grandes 10" - 11" (<= 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         padding: 30px 20px;
         gap: 18px;
         margin: 0 auto 90px auto;
@@ -288,7 +288,7 @@ body {
 @media (max-width: 991px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
-        max-width: 90%;
+        max-width: 100%;
         padding: 35px 25px;
         gap: 15px;
         margin-bottom: 90px;
