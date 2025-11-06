@@ -141,9 +141,9 @@ function renderTarjetas(id, lista) {
   lista.forEach(item => {
     const div = document.createElement('div');
     div.classList.add('tarjeta');
-    div.innerHTML = `<img src="${item.imagen}" alt="${item.titulo}">
-                     <h3>${item.titulo}</h3>
-                     <p>${item.descripcion}</p>`;
+    div.innerHTML = `<img src="${item.imagen}" alt="${item.titulo}" loading="lazy">
+                 <h3>${item.titulo}</h3>
+                 <p>${item.descripcion}</p>`;
     contenedor.appendChild(div);
   });
 }
