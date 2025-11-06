@@ -964,6 +964,19 @@ body {
   transform: scale(1.2);
 }
 
+.footer-section a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+  font-weight: 300;
+}
+
+.footer-section a:hover {
+  color: #ce5b0c;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .footer-container {
