@@ -180,3 +180,17 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTarjetas('carruselCoaching', coaching);
   renderConferencias();
 });
+
+// =========================
+// FUNCIONES DEL MODAL
+// =========================
+function abrirModal(titulo, texto) {
+  document.getElementById("modalTitulo").innerText = titulo;
+  document.getElementById("modalTexto").innerText = texto;
+  document.getElementById("modalConsultoria").style.display = "block";
+}
+
+function cerrarModal() {
+  document.getElementById("modalConsultoria").style.display = "none";
+}
+
