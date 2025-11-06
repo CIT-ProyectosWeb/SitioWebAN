@@ -948,9 +948,8 @@ body {
   font-weight: 300;
 }
 
-.footer-link {
-  color: black;
-  text-decoration: none;
+.redes a {
+  display: inline-block;
 }
 
 .footer-section .fa-brands {
@@ -962,9 +961,10 @@ body {
 
 .footer-section .fa-brands:hover {
   transform: scale(1.2);
+  color: #ce5b0c;
 }
 
-.footer-section a {
+.footer-link {
   display: block;
   color: black;
   text-decoration: none;
@@ -973,7 +973,7 @@ body {
   font-weight: 300;
 }
 
-.footer-section a:hover {
+.footer-link:hover {
   color: #ce5b0c;
 }
 
