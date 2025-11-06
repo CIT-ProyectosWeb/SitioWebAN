@@ -667,9 +667,8 @@ button:hover {
   font-weight: 300;
 }
 
-.footer-link {
-  color: black;
-  text-decoration: none;
+.redes a {
+  display: inline-block;
 }
 
 .footer-section .fa-brands {
@@ -681,6 +680,20 @@ button:hover {
 
 .footer-section .fa-brands:hover {
   transform: scale(1.2);
+  color: #ce5b0c;
+}
+
+.footer-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+  font-weight: 300;
+}
+
+.footer-link:hover {
+  color: #ce5b0c;
 }
 
 /* Responsivo */
