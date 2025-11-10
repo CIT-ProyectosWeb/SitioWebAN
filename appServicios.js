@@ -63,12 +63,6 @@ const coaching = [
   { titulo: 'Coaching de Vida', imagen: 'imagenes/coaching1.jpg', descripcion: 'Descubre tu propósito y alinea tus acciones con lo que realmente te inspira.' },
   { titulo: 'Coaching Ejecutivo', imagen: 'imagenes/coaching2.jpg', descripcion: 'Desarrolla tu liderazgo y maximiza el potencial de tu equipo y organización.' },
   { titulo: 'Coaching de Equipos', imagen: 'imagenes/coaching3.jpg', descripcion: 'Fortalece la confianza, comunicación y colaboración entre tus colaboradores.' },
-  { titulo: 'Coaching Personal', imagen: 'imagenes/coaching4.jpg', descripcion: 'Aprende a gestionar tus emociones y superar bloqueos personales.' },
-  { titulo: 'Coaching Transformacional', imagen: 'imagenes/coaching5.jpg', descripcion: 'Cambia tu mentalidad para alcanzar metas que antes parecían imposibles.' },
-  { titulo: 'Liderazgo Consciente', imagen: 'imagenes/coaching6.jpg', descripcion: 'Dirige con empatía, integridad y visión estratégica.' },
-  { titulo: 'Coaching de Comunicación', imagen: 'imagenes/coaching7.jpg', descripcion: 'Aprende a escuchar activamente y comunicarte con impacto.' },
-  { titulo: 'Empoderamiento Personal', imagen: 'imagenes/coaching8.jpg', descripcion: 'Reconoce tus fortalezas y asume el control de tu desarrollo personal.' },
-  { titulo: 'Coaching para la Resiliencia', imagen: 'imagenes/coaching9.jpg', descripcion: 'Recupera tu equilibrio ante el cambio y las adversidades.' },
   { titulo: 'Mentoring & Coaching', imagen: 'imagenes/coaching10.jpg', descripcion: 'Combina la guía estratégica del mentoring con el enfoque reflexivo del coaching.' },
 ];
 
