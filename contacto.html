@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="stylesContacto.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -35,36 +36,39 @@
     <!-- Contacto -->
     <section class="contact-section">
         <div class="contact-container">
-            <!-- Izquierda: texto y formulario -->
             <div class="contact-form">
                 <h2>Contáctame ahora</h2>
                 <p>Blvd. Felipe Pescador 1830, Nueva Vizcaya, 34080 Durango, Dgo.</p>
                 <p>alnegresal@gmail.com</p>
 
-                <form id="contactForm" novalidate>
-                    <div class="input-group">
-                        <input id="name" name="name" type="text" placeholder="Nombre" />
-                        <input id="email" name="email" type="email" placeholder="Email" />
-                    </div>
+                <form id="contact-form" method="POST">
+                    <input type="hidden" name="access_key" value="4b2e452d-856d-49ee-b8a8-a9fefc399a4a">
 
-                    <input id="subject" name="subject" type="text" placeholder="Asunto" />
-                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="6"></textarea>
+                    <label for="name">Nombre:</label>
+                    <input id="name" type="text" name="name" placeholder="Nombre" required>
 
-                    <div id="formFeedback" aria-live="polite" style="margin-bottom:8px;color:#b00020;"></div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
 
-                    <button id="submitBtn" type="submit">Enviar</button>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="6"
+                        required></textarea>
+
+                    <button type="submit">Enviar</button>
                 </form>
+
             </div>
 
-            <!-- Derecha: imagen -->
             <div class="contact-image">
-                <img src="imagenes/img5.jpg" alt="Personas saliendo de edificio" />
+                <img src="imagenes/img5.jpg" />
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- Formulario JS-->
-    <app src="appContacto.js"></app>
+    <script src="appContacto.js"></script>
 
 
     <!-- Mapa -->
