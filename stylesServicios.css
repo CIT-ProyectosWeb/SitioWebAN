@@ -353,10 +353,10 @@ body {
   filter: brightness(0.9);
 }
 
-.cuadro1 { background-image: url("imagenes/c1.jpg"); }
-.cuadro2 { background-image: url("imagenes/c2.jpg"); }
-.cuadro3 { background-image: url("imagenes/c3.jpg"); }
-.cuadro4 { background-image: url("imagenes/c4.jpg"); }
+.cuadro1 { background-image: url("imagenes/capitalhumano.jpg"); }
+.cuadro2 { background-image: url("imagenes/marketing.jpg"); }
+.cuadro3 { background-image: url("imagenes/finanzas.jpg"); }
+.cuadro4 { background-image: url("imagenes/procesos.jpg"); }
 
 /* Bloques de texto */
 .consultoria-info {
