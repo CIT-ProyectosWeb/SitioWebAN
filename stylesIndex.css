@@ -519,6 +519,155 @@ body {
   }
 }
 
+@media (max-width: 430px) {
+  .porque-elegir {
+    padding: 40px 5%;
+  }
+
+  .porque-elegir-contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .porque-elegir-imagen img {
+    max-width: 230px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  }
+
+  .porque-elegir-texto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .porque-elegir-texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .porque-elegir-texto p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .porque-elegir-texto ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+  }
+
+  .porque-elegir-texto li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    padding-left: 26px;
+  }
+
+  .porque-elegir-texto li::before {
+    font-size: 1rem;
+    top: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .porque-elegir {
+    padding: 35px 4%;
+  }
+
+  .porque-elegir-imagen img {
+    max-width: 200px;
+  }
+
+  .porque-elegir-texto h2 {
+    font-size: 1.3rem;
+  }
+
+  .porque-elegir-texto p {
+    font-size: 0.85rem;
+  }
+
+  .porque-elegir-texto li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .porque-elegir-texto li::before {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .porque-elegir {
+    padding: 30px 4%;
+    text-align: center;
+  }
+
+  .porque-elegir-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .porque-elegir-imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .porque-elegir-imagen img {
+    max-width: 180px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .porque-elegir-texto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .porque-elegir-texto h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .porque-elegir-texto p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .porque-elegir-texto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .porque-elegir-texto li {
+    font-size: 0.8rem;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .porque-elegir-texto li::before {
+    content: "✔";
+    font-size: 0.9rem;
+    color: #ce5b0c;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 /***************************************************************************************/
 
 /* Sección Historia y Trayectoria */
