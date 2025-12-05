@@ -5,14 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios | Alberto Negrete</title>
+
   <link rel="stylesheet" href="stylesServicios.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Navbar -->
+
+  <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="/index.html" class="logo-link" rel="noopener noreferrer">
+    <a href="/index.html" class="logo-link">
       <img src="imagenes/LogoAlberto.png" alt="Logo" class="logo">
     </a>
 
@@ -31,26 +33,108 @@
     </ul>
   </nav>
 
-  <!-- ✅ CAPACITACIONES -->
+  <!-- ======================== -->
+  <!--     CAPACITACIONES 1     -->
+  <!-- ======================== -->
   <section class="capacitaciones-section">
     <h1 class="titulo-seccion">CAPACITACIONES</h1>
     <p class="conferencias-subtitulo">Cursos, Talleres y Team Building</p>
     <div class="linea"></div>
 
+    <!-- CARRUSEL 1 -->
     <div class="carrusel">
       <button class="flecha izquierda" onclick="moverIzquierda('carrusel1')">&#10094;</button>
-      <div class="carrusel-contenedor" id="carrusel1"></div>
+
+      <div class="carrusel-contenedor" id="carrusel1">
+
+        <!-- 9 TARJETAS CAPACITACIONES -->
+        <div class="tarjeta">
+          <img src="imagenes/TB.png" loading="lazy">
+          <h3>Team Building</h3>
+          <p>Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c2.jpg" loading="lazy">
+          <h3>Fortalecimiento del compromiso hacia la empresa</h3>
+          <p>Estrategias para generar equipos motivados e involucrados.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c3.jpg" loading="lazy">
+          <h3>Planeación y gestión de la productividad</h3>
+          <p>Planifica metas y tareas con enfoque SMART.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c4.jpg" loading="lazy">
+          <h3>Gestión del cambio</h3>
+          <p>Aumenta la resiliencia y adaptabilidad de tu organización.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c5.jpg" loading="lazy">
+          <h3>Habilidades de liderazgo</h3>
+          <p>Desarrolla competencias para dirigir con empatía.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c6.jpg" loading="lazy">
+          <h3>Manejo de personal</h3>
+          <p>Mejora comunicación, delegación y desarrollo del equipo.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c7.jpg" loading="lazy">
+          <h3>Herramientas de coaching</h3>
+          <p>Aplica técnicas de coaching para potenciar resultados.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c8.jpg" loading="lazy">
+          <h3>Comunicación entre departamentos</h3>
+          <p>Eleva la interacción y sinergia interna.</p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="imagenes/c9.jpg" loading="lazy">
+          <h3>Comunicación asertiva</h3>
+          <p>Expresión clara, escucha activa y negociación empática.</p>
+        </div>
+
+      </div>
+
       <button class="flecha derecha" onclick="moverDerecha('carrusel1')">&#10095;</button>
     </div>
 
+    <!-- ======================== -->
+    <!--     CAPACITACIONES 2     -->
+    <!-- ======================== -->
+
     <div class="carrusel">
       <button class="flecha izquierda" onclick="moverIzquierda('carrusel2')">&#10094;</button>
-      <div class="carrusel-contenedor" id="carrusel2"></div>
+
+      <div class="carrusel-contenedor" id="carrusel2">
+
+        <!-- 7 TARJETAS -->
+        <div class="tarjeta"><img src="imagenes/C10.jpg"><h3>Relaciones humanas</h3><p>Fomenta respeto, comprensión y colaboración.</p></div>
+        <div class="tarjeta"><img src="imagenes/C11.jpg"><h3>Ventas exitosas</h3><p>Estrategias prácticas de cierre y conexión con el cliente.</p></div>
+        <div class="tarjeta"><img src="imagenes/C12.jpg"><h3>Servicio de excelencia</h3><p>Transforma atención tradicional en experiencias memorables.</p></div>
+        <div class="tarjeta"><img src="imagenes/C13.jpg"><h3>Motivación positiva</h3><p>Incrementa satisfacción, energía y compromiso.</p></div>
+        <div class="tarjeta"><img src="imagenes/C14.jpg"><h3>Manejo del estrés</h3><p>Técnicas efectivas de relajación y balance emocional.</p></div>
+        <div class="tarjeta"><img src="imagenes/C15.jpg"><h3>Inteligencia emocional</h3><p>Regulación emocional para mejores relaciones.</p></div>
+        <div class="tarjeta"><img src="imagenes/C16.jpg"><h3>Manejo de conflictos</h3><p>Solución constructiva y comunicación efectiva.</p></div>
+
+      </div>
+
       <button class="flecha derecha" onclick="moverDerecha('carrusel2')">&#10095;</button>
     </div>
+
   </section>
 
-  <!-- ✅ COACHING -->
+  <!-- ======================== -->
+  <!--         COACHING         -->
+  <!-- ======================== -->
   <section class="coaching-section">
     <h1 class="titulo-seccion">COACHING</h1>
     <p class="conferencias-subtitulo">Crecimiento personal y liderazgo transformacional</p>
@@ -58,85 +142,192 @@
 
     <div class="carrusel">
       <button class="flecha izquierda" onclick="moverIzquierdaCoaching()">&#10094;</button>
-      <div class="carrusel-contenedor" id="carruselCoaching"></div>
+
+      <div class="carrusel-contenedor" id="carruselCoaching">
+
+        <div class="tarjeta"><img src="imagenes/coaching1.jpg"><h3>Coaching de Vida</h3><p>Descubre propósito y sentido.</p></div>
+        <div class="tarjeta"><img src="imagenes/coaching2.jpg"><h3>Coaching Ejecutivo</h3><p>Desarrolla liderazgo y toma de decisiones.</p></div>
+        <div class="tarjeta"><img src="imagenes/coaching3.jpg"><h3>Coaching de Equipos</h3><p>Fortalece confianza y colaboración.</p></div>
+        <div class="tarjeta"><img src="imagenes/coaching10.jpg"><h3>Mentoring & Coaching</h3><p>Guía estratégica + reflexión profunda.</p></div>
+
+      </div>
+
       <button class="flecha derecha" onclick="moverDerechaCoaching()">&#10095;</button>
     </div>
   </section>
 
-  <!-- ✅ ESTADÍSTICAS -->
+  <!-- ======================== -->
+  <!--        ESTADÍSTICAS      -->
+  <!-- ======================== -->
   <section class="estadisticas-section">
-    <div class="estadistica">
-      <h2>+27</h2>
-      <p>Años de Experiencia</p>
-    </div>
+    <div class="estadistica"><h2>+27</h2><p>Años de Experiencia</p></div>
     <div class="separador"></div>
-    <div class="estadistica">
-      <h2>+200</h2>
-      <p>Empresas Capacitadas</p>
-    </div>
+    <div class="estadistica"><h2>+200</h2><p>Empresas Capacitadas</p></div>
     <div class="separador"></div>
-    <div class="estadistica">
-      <h2>+20,000</h2>
-      <p>Personas Entrenadas</p>
-    </div>
+    <div class="estadistica"><h2>+20,000</h2><p>Personas Entrenadas</p></div>
     <div class="separador"></div>
-    <div class="estadistica">
-      <h2>+500</h2>
-      <p>Conferencias Impartidas</p>
-    </div>
+    <div class="estadistica"><h2>+500</h2><p>Conferencias Impartidas</p></div>
     <div class="separador"></div>
-    <div class="estadistica">
-      <h2>+5</h2>
-      <p>Capacitaciones Internacionales</p>
-    </div>
+    <div class="estadistica"><h2>+5</h2><p>Capacitaciones Internacionales</p></div>
   </section>
 
-  <!-- ✅ CONFERENCIAS -->
+  <!-- ======================== -->
+  <!--       CONFERENCIAS       -->
+  <!-- ======================== -->
   <section class="conferencias-categorias">
     <h1 class="conferencias-titulo-seccion">CONFERENCIAS</h1>
     <p class="conferencias-subtitulo">Desarrollo personal, liderazgo, bienestar emocional y trabajo en equipo</p>
     <div class="conferencias-linea"></div>
 
-    <div id="conferenciasContainer"></div>
+    <!-- DESARROLLO PERSONAL -->
+    <div class="conferencias-categoria">
+      <h2 class="conferencias-titulo-categoria">Desarrollo Personal</h2>
+      <div class="conferencias-tarjetas">
+
+        <div class="conferencias-tarjeta">
+          <div class="conferencias-overlay overlay-naranja">
+            <h3>El maravilloso poder de decidir</h3>
+            <p>Decisiones conscientes para construir destino.</p>
+          </div>
+          <img src="imagenes/CC1.jpg">
+        </div>
+
+        <div class="conferencias-tarjeta">
+          <div class="conferencias-overlay overlay-naranja">
+            <h3>Darme cuenta</h3>
+            <p>Autoconciencia, fortalezas y claridad interna.</p>
+          </div>
+          <img src="imagenes/CC2.jpg">
+        </div>
+
+        <div class="conferencias-tarjeta">
+          <div class="conferencias-overlay overlay-naranja">
+            <h3>Propósito de vida</h3>
+            <p>Encuentra sentido y dirección.</p>
+          </div>
+          <img src="imagenes/CC3.jpg">
+        </div>
+
+        <div class="conferencias-tarjeta">
+          <div class="conferencias-overlay overlay-naranja">
+            <h3>Cambios en creencias</h3>
+            <p>Transformación mental profunda.</p>
+          </div>
+          <img src="imagenes/CC4.jpg">
+        </div>
+
+        <div class="conferencias-tarjeta">
+          <div class="conferencias-overlay overlay-naranja">
+            <h3>¿Me lo creo?</h3>
+            <p>Autoconfianza y seguridad personal.</p>
+          </div>
+          <img src="imagenes/CC5.jpg">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MOTIVACIÓN Y RESILIENCIA -->
+    <div class="conferencias-categoria">
+      <h2 class="conferencias-titulo-categoria">Motivación y Resiliencia</h2>
+      <div class="conferencias-tarjetas">
+
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Automotivación</h3><p>Actitud interna para el éxito.</p></div><img src="imagenes/CC6.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Aguanta vara</h3><p>Resiliencia ante la adversidad.</p></div><img src="imagenes/CC7.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Hazlo realidad</h3><p>Activa tus motivadores internos.</p></div><img src="imagenes/CC8.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Despierta el líder</h3><p>Conecta con tu liderazgo interno.</p></div><img src="imagenes/CC9.jpg"></div>
+
+      </div>
+    </div>
+
+    <!-- INTELIGENCIA EMOCIONAL -->
+    <div class="conferencias-categoria">
+      <h2 class="conferencias-titulo-categoria">Inteligencia Emocional</h2>
+      <div class="conferencias-tarjetas">
+
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Competencias emocionales</h3><p>Reconoce y regula emociones.</p></div><img src="imagenes/CC10.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Mindfulness</h3><p>Atención plena y serenidad.</p></div><img src="imagenes/CC11.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Manejo del estrés</h3><p>Equilibrio y autocontrol.</p></div><img src="imagenes/CC12.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Conectando emociones</h3><p>Relaciones humanas profundas.</p></div><img src="imagenes/CC13.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Más amor, menos violencia</h3><p>Empatía y respeto.</p></div><img src="imagenes/CC14.jpg"></div>
+
+      </div>
+    </div>
+
+    <!-- FAMILIA Y SERVICIO -->
+    <div class="conferencias-categoria">
+      <h2 class="conferencias-titulo-categoría">Familia y Servicio</h2>
+      <div class="conferencias-tarjetas">
+
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>La familia: el mejor equipo</h3><p>Unidad y colaboración.</p></div><img src="imagenes/CC15.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Comprometido ¿yo?</h3><p>Responsabilidad y coherencia.</p></div><img src="imagenes/CC16.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>¿Cómo servir más?</h3><p>Servicio significativo.</p></div><img src="imagenes/CC17.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Lenguaje responsable</h3><p>Impacto de las palabras.</p></div><img src="imagenes/CC18.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-gris"><h3>Comunicación asertiva</h3><p>Respeto y claridad.</p></div><img src="imagenes/CC19.jpg"></div>
+
+      </div>
+    </div>
+
+    <!-- LIDERAZGO PROFESIONAL -->
+    <div class="conferencias-categoria">
+      <h2 class="conferencias-titulo-categoria">Crecimiento Profesional</h2>
+      <div class="conferencias-tarjetas">
+
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Actitudes positivas</h3><p>Energía y enfoque.</p></div><img src="imagenes/CC20.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Ponte la camiseta</h3><p>Compromiso y pertenencia.</p></div><img src="imagenes/CC21.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Juntos logramos más</h3><p>Sinergia de equipo.</p></div><img src="imagenes/CC22.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Vida y trabajo</h3><p>Balance personal-laboral.</p></div><img src="imagenes/CC23.jpg"></div>
+        <div class="conferencias-tarjeta"><div class="conferencias-overlay overlay-naranja"><h3>Finanzas inteligentes</h3><p>Relación sana con el dinero.</p></div><img src="imagenes/CC24.jpg"></div>
+
+      </div>
+    </div>
+
   </section>
 
-  <!-- ✅ CONSULTORIA INTEGRAL PARA EMPRESAS -->
+
+  <!-- ======================== -->
+  <!--     CONSULTORÍA          -->
+  <!-- ======================== -->
   <section class="consultoria-section">
     <h1 class="titulo-seccion">CONSULTORÍA INTEGRAL PARA EMPRESAS</h1>
     <p class="conferencias-subtitulo">Estrategias clave para optimizar tu organización y potenciar sus resultados</p>
     <div class="linea"></div>
 
     <div class="consultoria-container">
-      <!-- Bloques de texto -->
+
+      <!-- Textos -->
       <div class="consultoria-info izquierda-superior">
         <h2>Capital Humano</h2>
-        <p>Fortalecemos el desarrollo del talento, liderazgo y compromiso de tu equipo.</p>
-      </div>
-      <div class="consultoria-info derecha-superior">
-        <h2>Clientes y Marketing</h2>
-        <p>Diseñamos estrategias de comunicación y posicionamiento para tu marca.</p>
-      </div>
-      <div class="consultoria-info izquierda-inferior">
-        <h2>Finanzas</h2>
-        <p>Optimizamos los recursos económicos de tu empresa con planeación estratégica.</p>
-      </div>
-      <div class="consultoria-info derecha-inferior">
-        <h2>Procesos</h2>
-        <p>Mejoramos la eficiencia operativa mediante innovación y mejora continua.</p>
+        <p>Fortalecemos el desarrollo del talento y liderazgo.</p>
       </div>
 
-      <!-- Círculo central -->
+      <div class="consultoria-info derecha-superior">
+        <h2>Clientes y Marketing</h2>
+        <p>Estrategias de comunicación y posicionamiento.</p>
+      </div>
+
+      <div class="consultoria-info izquierda-inferior">
+        <h2>Finanzas</h2>
+        <p>Optimización de recursos y planeación efectiva.</p>
+      </div>
+
+      <div class="consultoria-info derecha-inferior">
+        <h2>Procesos</h2>
+        <p>Mejora continua y eficiencia operativa.</p>
+      </div>
+
+      <!-- CÍRCULO -->
       <div class="consultoria-cuadrante">
         <div class="cuadro cuadro1"></div>
         <div class="cuadro cuadro2"></div>
         <div class="cuadro cuadro3"></div>
         <div class="cuadro cuadro4"></div>
       </div>
+
     </div>
   </section>
 
-
-  <!-- 🌟 MODAL -->
+  <!-- MODAL -->
   <div id="modalConsultoria" class="modal">
     <div class="modal-contenido">
       <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -145,43 +336,39 @@
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
+
       <div class="footer-section">
-        <a href="/index.html" class="footer-link">
-          <img src="imagenes/LogoAlberto.png" alt="Descripción de la imagen" class="footer-imagen">
+        <a href="/index.html">
+          <img src="imagenes/LogoAlberto.png" class="footer-imagen">
         </a>
       </div>
+
       <div class="footer-section">
         <h3>Explora</h3>
-        <a href="conoceme.html" class="footer-link">Conóceme</a>
-        <a href="servicios.html" class="footer-link">Servicios</a>
-        <a href="casosExito.html" class="footer-link">Casos de éxito</a>
+        <a class="footer-link" href="conoceme.html">Conóceme</a>
+        <a class="footer-link" href="servicios.html">Servicios</a>
+        <a class="footer-link" href="casosExito.html">Casos de éxito</a>
       </div>
+
       <div class="footer-section">
         <h3>Contacto y ubicación</h3>
         <p>Tel. 618 119 3347</p>
-        <p>Blvd. Felipe Pescador 1830, Nueva Vizcaya, 34080 Durango, Dgo.</p>
-        <p>Oficina ubicada en el Centro de Innovación Tecnológica</p>
+        <p>Blvd. Felipe Pescador 1830, Nueva Vizcaya, Durango</p>
+        <p>Centro de Innovación Tecnológica</p>
       </div>
+
       <div class="footer-section redes">
         <h3>Síguenos</h3>
-        <!-- Sección de Redes Sociales -->
         <p>
-          <a href="https://www.facebook.com/people/Llega-a-ser-el-que-eres-Alberto-Negrete/100064041333602/?mibextid=wwXIfr&rdid=HWWxacZFSwGoHLK3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18pWT8xHQv%2F%3Fmibextid%3DwwXIfr"
-            target="_blank" class="footer-linkMaestria">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=6181193347&text&type=phone_number&app_absent=0" target="_blank"
-            class="footer-link">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="" target="_blank" class="footer-link">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+          <a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="footer-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
         </p>
       </div>
+
     </div>
   </footer>
 
