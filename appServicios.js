@@ -36,14 +36,14 @@ function moverIzquierdaConsultoria() {
 // ============================================================
 const capacitaciones1 = [
   { titulo: 'Team Building', imagen: 'imagenes/TB.png', descripcion: 'Ejercicios vivenciales para fortalecer la confianza, comunicación y cohesión en el equipo.' },
-  { titulo: 'Fortalecimiento del compromiso hacia la empresa', imagen: 'imagenes/c2.jpg', descripcion: 'Estrategias para generar equipos más motivados, involucrados y orientados a resultados.' },
-  { titulo: 'Planeación y gestión de la productividad', imagen: 'imagenes/c3.jpg', descripcion: 'Aprende a planificar tareas y metas con enfoque SMART y resultados medibles.' },
-  { titulo: 'Gestión del cambio', imagen: 'imagenes/c4.jpg', descripcion: 'Aumenta la adaptabilidad y resiliencia organizacional ante nuevos desafíos.' },
-  { titulo: 'Fortalecimiento de habilidades de liderazgo', imagen: 'imagenes/c5.jpg', descripcion: 'Desarrolla competencias para dirigir, inspirar y guiar con empatía.' },
-  { titulo: 'Fortalecimiento de habilidades para el manejo de personal', imagen: 'imagenes/c6.jpg', descripcion: 'Mejora la comunicación, delegación y desarrollo de tus colaboradores.' },
-  { titulo: 'Herramientas de coaching para un liderazgo eficiente', imagen: 'imagenes/c7.jpg', descripcion: 'Aplica técnicas de coaching y PNL para potenciar a tu equipo.' },
-  { titulo: 'Comunicación productiva entre departamentos', imagen: 'imagenes/c8.jpg', descripcion: 'Mejora la interacción interna y la sinergia organizacional.' },
-  { titulo: 'Comunicación asertiva y efectiva', imagen: 'imagenes/c9.jpg', descripcion: 'Aprende a escuchar, expresarte y negociar con empatía.' },
+  { titulo: 'Fortalecimiento del compromiso hacia la empresa', imagen: 'imagenes/C2.jpg', descripcion: 'Estrategias para generar equipos más motivados, involucrados y orientados a resultados.' },
+  { titulo: 'Planeación y gestión de la productividad', imagen: 'imagenes/C3.jpg', descripcion: 'Aprende a planificar tareas y metas con enfoque SMART y resultados medibles.' },
+  { titulo: 'Gestión del cambio', imagen: 'imagenes/C4.jpg', descripcion: 'Aumenta la adaptabilidad y resiliencia organizacional ante nuevos desafíos.' },
+  { titulo: 'Fortalecimiento de habilidades de liderazgo', imagen: 'imagenes/C5.jpg', descripcion: 'Desarrolla competencias para dirigir, inspirar y guiar con empatía.' },
+  { titulo: 'Fortalecimiento de habilidades para el manejo de personal', imagen: 'imagenes/C6.jpg', descripcion: 'Mejora la comunicación, delegación y desarrollo de tus colaboradores.' },
+  { titulo: 'Herramientas de coaching para un liderazgo eficiente', imagen: 'imagenes/C7.jpg', descripcion: 'Aplica técnicas de coaching y PNL para potenciar a tu equipo.' },
+  { titulo: 'Comunicación productiva entre departamentos', imagen: 'imagenes/C8.jpg', descripcion: 'Mejora la interacción interna y la sinergia organizacional.' },
+  { titulo: 'Comunicación asertiva y efectiva', imagen: 'imagenes/C9.jpg', descripcion: 'Aprende a escuchar, expresarte y negociar con empatía.' },
 ];
 
 const capacitaciones2 = [
@@ -157,7 +157,7 @@ function renderConferencias() {
               <h3>${item.titulo}</h3>
               <p>${item.descripcion}</p>
             </div>
-            <img src="${item.imagen}" alt="${item.titulo}">
+            <img loading="lazy" src="${item.imagen}" alt="${item.titulo}">
           </div>
         `).join('')}
       </div>`;
