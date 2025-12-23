@@ -1085,6 +1085,7 @@ body {
 
 .whatsapp-float:hover .whatsapp-text {
     opacity: 1;
+    margin-left: 130px;
 }
 
 .whatsapp-icon {
