@@ -386,7 +386,10 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
+  background-image: url("imagenes/arboles.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .img-bg {
@@ -402,17 +405,13 @@ body {
 
 .overlay-dark {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: -1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .valores-overlay {
   position: relative;
-  width: 100%;
   z-index: 2;
 }
 
@@ -487,6 +486,12 @@ body {
   .titulo-valores {
     font-size: 2rem;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .valores-section {
+    background-attachment: scroll;
   }
 }
 
